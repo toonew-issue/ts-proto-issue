@@ -2,7 +2,8 @@
   "name": "ts-proto-issue",
   "version": "1.0.0",
   "scripts": {
-    "generate": "make generate"
+    "prepare": "npm run generate",
+    "generate": "ts-node ./script/generate.ts"
   },
   "dependencies": {
     "long": "4",
@@ -11,6 +12,7 @@
   "devDependencies": {
     "@types/long": "4",
     "@types/node": "16",
+    "prettier": "2.8.6",
     "ts-node": "10.9.1",
     "ts-proto": "1.143.0",
     "typescript": "5.0.2"
